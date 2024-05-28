@@ -1,4 +1,4 @@
-package UINFO.Models;
+package UINFO.Modelss;
 
 public class Kampus {
 
