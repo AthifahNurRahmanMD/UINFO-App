@@ -6,7 +6,6 @@ import javafx.stage.Stage;
 
 public class App extends Application {
 
-    // Menambahkan Stage sebagai langkah awal
     @Override
     public void start(Stage primaryStage) {
         Home homie = new Home(primaryStage);
