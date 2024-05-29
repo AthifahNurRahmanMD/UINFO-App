@@ -48,7 +48,7 @@ public class PtSession implements SceneInterface  {
             ptsButtonScene.show();
         });
 
-        Button backButton = new Button("Back");
+        Button backButton = new Button("Kembali");
         backButton.setPrefWidth(100);
         backButton.setOnAction(e -> {
             Home homie =  new Home(stage);

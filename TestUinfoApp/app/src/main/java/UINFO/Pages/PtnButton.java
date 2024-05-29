@@ -51,7 +51,7 @@ public class PtnButton {
             ptnDetailUGM.show();
        });
 
-        Button backButton = new Button("back");
+        Button backButton = new Button("Kembali");
         backButton.setPrefWidth(100);
         backButton.setOnAction(e -> {
             PtSession ptsession =  new PtSession(stage);

@@ -28,7 +28,7 @@ public class PtsButton {
         hlpts.getStyleClass().add("label-hlpts");
 
         Button btnUmi =  new Button("       UNIVERSITAS\nMUSLIM INDONESIA ");
-        btnUmi.getStyleClass().add("button-buttonTriuniv");
+        btnUmi.getStyleClass().add("button-buttonTwouniv");
         btnUmi.setOnAction(e -> {
             Kampus umiKampus = new Kampus(0, "Universitas Muslim Indonesia", "Jl. Urip Sumuharjo KM.5\nMakassar, Sulawesi Selatan 90231. ","");
             PTNSDetail ptsDetailUMI = new PTNSDetail(stage, umiKampus);
@@ -36,8 +36,8 @@ public class PtsButton {
         });
 
 
-        Button btnUNIBOS =  new Button("UNIVERSITAS\n   BOSOWA");
-        btnUNIBOS.getStyleClass().add("button-buttonTriuniv");
+        Button btnUNIBOS =  new Button("UNIVERSITAS BOSOWA");
+        btnUNIBOS.getStyleClass().add("button-buttonTwouniv");
         btnUNIBOS.setOnAction(e -> {
             Kampus unibosKampus = new Kampus(0, "Universitas Bosowa ", "Jl. Urip Sumoharjo KM.4\nMakassar, Sulawesi Selatan, 90231","");
             PTNSDetail ptsDetailUNIBOS = new PTNSDetail(stage,unibosKampus);
@@ -46,7 +46,7 @@ public class PtsButton {
 
 
 
-        Button backButton = new Button("back");
+        Button backButton = new Button("Kembali");
         backButton.setPrefWidth(100);
         backButton.setOnAction(e -> {
             PtSession ptsession =  new PtSession(stage);

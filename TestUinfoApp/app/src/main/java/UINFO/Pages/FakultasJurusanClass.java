@@ -34,29 +34,19 @@ public class FakultasJurusanClass {
         this.kampus = kampus;
         this.datajurusan_fakultas_kampus = datajurusan_fakultas_kampus; //ini bagian untuk inisialisasi observableList
         this.listFakultas = new ArrayList<>();
-        // fetchDataFromDatabase(); // ini bagian memanggil metode untuk mengambil data dari db
         initializeFakultasList();
     }
 
-    // private void fetchDataFromDatabase() {
-    //     // ambil data dari db using DbController
-    //     DbController dbController = new DbController();
-    //     datajurusan_fakultas_kampus = dbController.getdetailuniv(kampus.getKampus());
-    //     for (Kampus kampus : datajurusan_fakultas_kampus) {
-    //         System.out.println(kampus);
-    //     }
-    // }
-
     private void initializeFakultasList() {
-        Map<String, Map<String, Fakultas_Jurusan>> universitasMap =  new HashMap<>();
+        Map<String, Map<String, Fakultas_Jurusan>> fakultasjurusanMap =  new HashMap<>();
 
         for (Kampus kampus : datajurusan_fakultas_kampus){
             String universitas =  kampus.getKampus();
             String fakultas = kampus.getFakultas();
             String jurusan = kampus.getJurusan();
             
-            universitasMap.putIfAbsent(universitas, new HashMap<>());
-            Map<String, Fakultas_Jurusan> fakultasMap =  universitasMap.get(universitas);
+            fakultasjurusanMap.putIfAbsent(universitas, new HashMap<>());
+            Map<String, Fakultas_Jurusan> fakultasMap =  fakultasjurusanMap.get(universitas);
             
             if (!fakultasMap.containsKey(fakultas)){
                 Fakultas_Jurusan fakultasjurusan =  new Fakultas_Jurusan(fakultas);
@@ -96,7 +86,7 @@ public class FakultasJurusanClass {
         tableView.getColumns().addAll(colFakultas, colJurusan);
         tableView.setItems(FXCollections.observableArrayList(listFakultas));
 
-        Button backButton = new Button("Back");
+        Button backButton = new Button("Kembali");
         backButton.setPrefWidth(100);
         backButton.setOnAction(e -> {
             if (kampus.getStatus().equals("")) {
@@ -108,7 +98,7 @@ public class FakultasJurusanClass {
             }
         });
 
-        Image backgroundImage = new Image(getClass().getResourceAsStream("/Images/detailcampusbg.png"));
+        Image backgroundImage = new Image(getClass().getResourceAsStream("/Images/detailpage.png"));
 
         BackgroundImage backgroundImg = new BackgroundImage(backgroundImage,
             BackgroundRepeat.NO_REPEAT, BackgroundRepeat.NO_REPEAT, null,

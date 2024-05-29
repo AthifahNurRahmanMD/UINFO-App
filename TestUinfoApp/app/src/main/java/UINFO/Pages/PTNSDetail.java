@@ -43,7 +43,7 @@ public class PTNSDetail {
         Button btnjalur = new Button("Jalur Pendaftaran");
         btnjalur.setPrefWidth(200);
         btnjalur.setOnAction(e ->{
-            JalurPendaftaran japen = new JalurPendaftaran(stage, kampus);
+            JalurPendaftaran japen = new JalurPendaftaran(stage, kampus, dataKampus);
             japen.show();
         });
 
@@ -87,7 +87,7 @@ public class PTNSDetail {
             btnBkt.getStyleClass().add("button-fiturunibos");
         }
 
-        Button backButton = new Button("Back");
+        Button backButton = new Button("Kembali");
         backButton.setPrefWidth(100);
         backButton.setOnAction(e -> {
             if (kampus.getStatus().equals("")){
