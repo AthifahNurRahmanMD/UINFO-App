@@ -39,7 +39,7 @@ public class PtsButton {
         Button btnUNIBOS =  new Button("UNIVERSITAS\n   BOSOWA");
         btnUNIBOS.getStyleClass().add("button-buttonTriuniv");
         btnUNIBOS.setOnAction(e -> {
-            Kampus unibosKampus = new Kampus(0, "Universitas Bosowa", "Jl. Urip Sumoharjo KM.4\nMakassar, Sulawesi Selatan, 90231","");
+            Kampus unibosKampus = new Kampus(0, "Universitas Bosowa ", "Jl. Urip Sumoharjo KM.4\nMakassar, Sulawesi Selatan, 90231","");
             PTNSDetail ptsDetailUNIBOS = new PTNSDetail(stage,unibosKampus);
             ptsDetailUNIBOS.show();
        });

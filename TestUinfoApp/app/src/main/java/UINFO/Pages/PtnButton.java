@@ -38,7 +38,7 @@ public class PtnButton {
         Button btnUnm =  new Button("     UNIVERSITAS\nNEGERI MAKASSAR");
         btnUnm.getStyleClass().add("button-buttonTriuniv");
         btnUnm.setOnAction(e -> {
-            Kampus unmKampus = new Kampus(0, "Universitas Negeri Mks", "Jl. A.P. Pettarani Makassar,902222\nSulawesi Selatan, Indonesia.","PTN-NONBH");
+            Kampus unmKampus = new Kampus(0, "Universitas Negeri Makassar", "Jl. A.P. Pettarani Makassar,902222\nSulawesi Selatan, Indonesia.","PTN-NONBH");
             PTNSDetail ptnDetailUNM = new PTNSDetail(stage,unmKampus);
             ptnDetailUNM.show();
        });

@@ -66,7 +66,7 @@ public class PTNSDetail {
             btnfklts.getStyleClass().add("button-fiturUh");
             btnBkt.getStyleClass().add("button-fiturUh");
         }else if(
-            kampus.getKampus().equals("Universitas Negeri Mks")){
+            kampus.getKampus().equals("Universitas Negeri Makassar")){
             btnjalur.getStyleClass().add("button-fiturunm");
             btnfklts.getStyleClass().add("button-fiturunm");
             btnBkt.getStyleClass().add("button-fiturunm");
@@ -81,7 +81,7 @@ public class PTNSDetail {
             btnfklts.getStyleClass().add("button-fiturumi");
             btnBkt.getStyleClass().add("button-fiturumi");
         }else if(
-            kampus.getKampus().equals("Universitas Bosowa")){
+            kampus.getKampus().equals("Universitas Bosowa ")){
             btnjalur.getStyleClass().add("button-fiturunibos");
             btnfklts.getStyleClass().add("button-fiturunibos");
             btnBkt.getStyleClass().add("button-fiturunibos");
