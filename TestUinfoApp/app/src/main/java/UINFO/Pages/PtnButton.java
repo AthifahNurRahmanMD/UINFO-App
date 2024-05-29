@@ -67,7 +67,7 @@ public class PtnButton {
         StackPane.setMargin(btnUgm, new Insets(50,0,203,350) );       
         StackPane.setMargin(backButton, new Insets(400, 550, 15, 0));
         stackPane.getChildren().addAll( hlPtn, btnUnhas, btnUnm, btnUgm, backButton);
-       
+
         // Membuat objek BackgroundImage untuk latar belakang
         BackgroundImage backgroundImg = new BackgroundImage(backgroundImage,
             BackgroundRepeat.NO_REPEAT, BackgroundRepeat.NO_REPEAT, null,

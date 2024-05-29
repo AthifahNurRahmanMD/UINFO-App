@@ -38,7 +38,7 @@ public class PTNSDetail {
 
         dbController =  new DbController();
         ObservableList<Kampus> dataKampus = dbController.getdetailuniv(kampus.getKampus());
-        
+
 
         Button btnjalur = new Button("Jalur Pendaftaran");
         btnjalur.setPrefWidth(200);
@@ -46,11 +46,11 @@ public class PTNSDetail {
             JalurPendaftaran japen = new JalurPendaftaran(stage, kampus);
             japen.show();
         });
-        
+
         Button btnfklts = new Button("Jurusan/Fakultas");
         btnfklts.setPrefWidth(200);
         btnfklts.setOnAction(e ->{
-            FakultasJurusan fadanju = new FakultasJurusan(stage, kampus, dataKampus);
+            FakultasJurusanClass fadanju = new FakultasJurusanClass(stage, kampus, dataKampus);
             fadanju.show();
         });
 
@@ -86,7 +86,7 @@ public class PTNSDetail {
             btnfklts.getStyleClass().add("button-fiturunibos");
             btnBkt.getStyleClass().add("button-fiturunibos");
         }
-        
+
         Button backButton = new Button("Back");
         backButton.setPrefWidth(100);
         backButton.setOnAction(e -> {

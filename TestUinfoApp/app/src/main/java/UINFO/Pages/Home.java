@@ -17,7 +17,7 @@ import javafx.stage.Stage;
 
 public class Home {
     private Stage primaryStage;
-    
+
     // konstruktor Home dengan menerima primaryStage sebagai parameter
     public Home(Stage primaryStage){
         this.primaryStage = primaryStage;
@@ -25,10 +25,10 @@ public class Home {
     public void show() {
         Text uinfoText = new Text("UINFO APP");
         uinfoText.getStyleClass().add("text-uinfo");
-        
+
         Label welcome = new Label("Selamat Datang");
         welcome.getStyleClass().add("label-welcome");
-        
+
         Label welcome2 = new Label("Di Laman UINFO");
         welcome2.getStyleClass().add("label-welcome2");
 
@@ -42,7 +42,7 @@ public class Home {
 
         VBox selamatDatang = new VBox(welcome, welcome2);
         selamatDatang.setAlignment(Pos.TOP_RIGHT);
-        
+
         VBox rootVBox = new VBox(selamatDatang, startButton);
         rootVBox.setSpacing(30);
         rootVBox.setAlignment(Pos.CENTER_RIGHT);
@@ -54,7 +54,7 @@ public class Home {
         Image image = new Image("Images/homebg.png");
         BackgroundImage  backgroundImage =  new BackgroundImage(image, BackgroundRepeat.NO_REPEAT, BackgroundRepeat.NO_REPEAT, BackgroundPosition.CENTER, new BackgroundSize(1, 1, true, true, true, false));
         rootVBox.setBackground(new Background(backgroundImage));
-        
+
         Scene scene = new Scene(rootVBox, 800, 500);
         scene.getStylesheets().add(getClass().getResource("/CssStyle/styles.css").toExternalForm());
         primaryStage.setScene(scene);

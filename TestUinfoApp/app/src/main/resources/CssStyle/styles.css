@@ -20,7 +20,7 @@
 .button-startButton {
     -fx-font-family: 'Arial';
     -fx-font-size: 12;
-    -fx-font-weight:thin;
+    -fx-font-weight:normal;
     -fx-text-fill: #050505;
     -fx-background-color: #ffffff;
     -fx-background-radius: 10;
@@ -99,13 +99,13 @@
 .label-lokasiuniv{
     -fx-font-family: 'Arial';
     -fx-font-size: 12;
-    -fx-font-weight:thin;
+    -fx-font-weight:normal;
     -fx-text-fill: #01204E;
 }
 .button-fiturugm{
     -fx-font-family: 'Arial';
     -fx-font-size: 18;
-    -fx-font-weight:thin;
+    -fx-font-weight:normal;
     /* -fx-text-fill: #948979; */
     -fx-text-fill: #000000;
     -fx-background-color: #ffffff;
@@ -121,7 +121,7 @@
 .button-fiturUh{
     -fx-font-family: 'Arial';
     -fx-font-size: 18;
-    -fx-font-weight:thin;
+    -fx-font-weight:normal;
     -fx-text-fill: #000000;
     -fx-background-color: #ffffff;
     -fx-background-radius: 20; /* Radius lengkungan button */
@@ -136,7 +136,7 @@
 .button-fiturunm{
     -fx-font-family: 'Arial';
     -fx-font-size: 18;
-    -fx-font-weight:thin;
+    -fx-font-weight:normal;
     -fx-text-fill: #000000;
     -fx-background-color: #ffffff;
     -fx-background-radius: 20; /* Radius lengkungan button */
@@ -151,7 +151,7 @@
 /*  */
 .label-hlpts{
     -fx-font-family: 'Arial';
-    -fx-font-size: 50;
+    -fx-font-size: 40;
     -fx-font-weight:bold;
     -fx-text-fill: #ffffff;
     -fx-effect: dropshadow(gaussian, #3a5a4f, 0, 0, 3, 3);
@@ -171,7 +171,7 @@
 .button-fiturumi{
     -fx-font-family: 'Arial';
     -fx-font-size: 18;
-    -fx-font-weight:thin;
+    -fx-font-weight:normal;
     -fx-text-fill: #000000;
     -fx-background-color: #ffffff;
     -fx-background-radius: 20; /* Radius lengkungan button */
@@ -186,7 +186,7 @@
 .button-fiturunibos{
     -fx-font-family: 'Arial';
     -fx-font-size: 18;
-    -fx-font-weight:thin;
+    -fx-font-weight:normal;
     -fx-text-fill: #000000;
     -fx-background-color: #ffffff;
     -fx-background-radius: 20; /* Radius lengkungan button */
@@ -198,4 +198,4 @@
 .button-fiturunibos:pressed {
     -fx-background-color: #ffffff; /* Warna background button saat ditekan */
 }
-
+ 

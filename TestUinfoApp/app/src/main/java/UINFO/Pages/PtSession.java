@@ -16,7 +16,7 @@ import javafx.stage.Stage;
 
 public class PtSession implements SceneInterface  {
     private Stage stage;
-    
+
     //konstruktor PtSession
     public PtSession(Stage stage){
         this.stage = stage;
@@ -36,8 +36,8 @@ public class PtSession implements SceneInterface  {
             PtnButton ptnButtonScene = new PtnButton(stage);
             ptnButtonScene.show();
         });
-        
-        
+
+
         Button ptSButton = createTransparentButton(" Perguruan Tinggi Swasta");
         ptSButton.getStyleClass().add("button-ptsButton");
         ptSButton.setPrefWidth(225);
@@ -63,7 +63,7 @@ public class PtSession implements SceneInterface  {
         vbox.setSpacing(35);
         vbox.getChildren().addAll(ptNButton, ptSButton, backButton);
 
-       
+
         VBox root = new VBox(vboxA, vbox);
         root.setAlignment(Pos.CENTER);
         root.setSpacing(80);

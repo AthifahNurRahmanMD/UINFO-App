@@ -51,5 +51,5 @@ public class JalurPendaftaran {
         stage.setScene(scene);
         stage.show();
     }
-    
+
 }

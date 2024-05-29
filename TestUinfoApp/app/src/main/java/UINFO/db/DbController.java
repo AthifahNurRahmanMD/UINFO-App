@@ -9,7 +9,7 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 
 public class DbController {
-    
+
     public ObservableList<Kampus> getdetailuniv(String NamaKampus) {
         String sql = "SELECT * FROM DESKRIPSIUNIV WHERE Kampus = ?";
         ObservableList<Kampus> data = FXCollections.observableArrayList();
