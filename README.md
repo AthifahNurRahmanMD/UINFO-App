@@ -1,1 +1,0 @@
-UINFO-APP
