@@ -58,7 +58,7 @@ public class PtnButton {
             ptsession.show();
         });
 
-        Image backgroundImage = new Image(getClass().getResourceAsStream("/Images/PTNbg.png"));
+        Image backgroundImage = new Image(getClass().getResourceAsStream("/Images/newptndesain.png"));
 
         StackPane stackPane = new StackPane();
         StackPane.setMargin(hlPtn,new Insets(20, 15, 395, 10));
@@ -77,7 +77,7 @@ public class PtnButton {
 
 
         Scene scene = new Scene(stackPane, 800, 500);      
-        scene.getStylesheets().add(getClass().getResource("/CssStyle/styles.css").toExternalForm());
+        scene.getStylesheets().add(getClass().getResource("/Style/styles.css").toExternalForm());
         stage.setScene(scene);
         stage.show();
     }

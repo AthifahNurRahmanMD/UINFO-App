@@ -111,10 +111,10 @@ public class Home extends BaseScene {
         VBox.setMargin(welcome2, new Insets(0, 105, 10, 0));
         VBox.setMargin(startButton, new Insets(10, 70, 0, 0));
 
-        setBackground(rootVBox, "Images/homebg.png");
+        setBackground(rootVBox, "Images/newHome.png");
 
         Scene scene = new Scene(rootVBox, 800, 500);
-        setStylesheet(scene, "/CssStyle/styles.css");
+        setStylesheet(scene, "/Style/styles.css");
         showScene(scene);
     }
 }

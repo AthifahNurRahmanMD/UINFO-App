@@ -4,18 +4,18 @@
 
 }
 .label-welcome {
-    -fx-font-family: 'Lato';
+    -fx-font-family: 'Intro Rust';
     -fx-font-size: 25;
     -fx-font-weight:bold;
     -fx-text-fill: #f0f5f3;
-    /* -fx-effect: dropshadow(gaussian, #3a5a4f, 0, 0, 2, 2); */
+    -fx-effect: dropshadow(gaussian, #C738BD, 3, 0, 0, 0);
 }
 .label-welcome2 {
-    -fx-font-family: 'Arial';
+    -fx-font-family: 'Intro Rust';
     -fx-font-size: 15;
     -fx-font-weight:BOLD;
     -fx-text-fill: #f0f5f3;
-    /* -fx-effect: dropshadow(gaussian, #3a5a4f, 0, 0, 2, 2); */
+    -fx-effect: dropshadow(gaussian, #C738BD, 6, 0, 0, 0);
 }
 .button-startButton {
     -fx-font-family: 'Arial';
@@ -25,9 +25,10 @@
     -fx-background-color: #ffffff;
     -fx-background-radius: 10;
     -fx-border-width: 2px;
+    -fx-effect: dropshadow(gaussian, #C738BD, 10, 0, 0, 0);
 }
 .button-startButton:hover {
-    -fx-background-color: #76ABAE; /* Warna background button saat dihover */
+    -fx-background-color: #c0aafb; /* Warna background button saat dihover */
 }
 .button-startButton:pressed {
     -fx-background-color: #ffffff; /* Warna background button saat ditekan */
@@ -39,35 +40,39 @@
     -fx-font-size: 40;
     -fx-font-weight:bold;
     -fx-text-fill: #ffffff;
-    -fx-effect: dropshadow(gaussian, #3a5a4f, 0, 0, 2, 2);
+    -fx-effect: dropshadow(gaussian, #8b7cb3, 0, 0, 2, 2);
 }
 .button-ptnButton{
     -fx-font-family: 'Arial';
     -fx-font-size: 15;
     -fx-font-weight:bold;
-    -fx-text-fill: #2D4356;
+    -fx-text-fill: #1e1e1e;
     -fx-background-color: #ffffff;
-    -fx-background-radius: 10; /* Radius lengkungan button */
+    -fx-background-radius: 10; 
+    -fx-effect: dropshadow(gaussian, #ffffff, 8, 0, 0, 0);
 }
 .button-ptnButton:hover {
-    -fx-background-color: #9DB2BF; /* Warna background button saat dihover */
+    -fx-text-fill: #a96d6d; /* Warna background button saat dihover */
 }
 .button-ptnButton:pressed {
-    -fx-background-color: #ffffff; /* Warna background button saat ditekan */
+    -fx-text-fill: #ffffff; /* Warna background button saat ditekan */
+    -fx-background-color: #5959a0
 }
 .button-ptsButton{
     -fx-font-family: 'Arial';
     -fx-font-size: 14;
     -fx-font-weight:bold;
-    -fx-text-fill: #2D4356;
+    -fx-text-fill: #1e1e1e;
     -fx-background-color: #ffffff;
     -fx-background-radius: 10; /* Radius lengkungan button */
+    -fx-effect: dropshadow(gaussian, #ffffff, 8, 0, 0, 0)
 }
 .button-ptsButton:hover {
-    -fx-background-color: #9DB2BF; /* Warna background button saat dihover */
+    -fx-text-fill: #a96d6d; /* Warna background button saat dihover */
 }
 .button-ptsButton:pressed {
-    -fx-background-color: #ffffff; /* Warna background button saat ditekan */
+    -fx-text-fill: #ffffff; 
+    -fx-background-color: #5959a0; /* Warna background button saat ditekan */
 }
 /*  */
 .label-hlptn{
@@ -75,78 +80,87 @@
     -fx-font-size: 50;
     -fx-font-weight:bold;
     -fx-text-fill: #ffffff;
-    -fx-effect: dropshadow(gaussian, #3a5a4f, 0, 0, 3, 3);
+    -fx-effect: dropshadow(gaussian, #5959a0, 3, 1, 1, 1);
 }
 .button-buttonTriuniv{
     -fx-font-family: 'Lato';
     -fx-font-size: 13;
     -fx-font-weight:bold;
-    -fx-text-fill: #3a5a4f;
+    -fx-text-fill: #1e1e1e;
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 5;
+    -fx-effect: dropshadow(gaussian, #ffffff, 5, 0, 0, 0);
+
 }
 .button-buttonTriuniv:hover{
-    -fx-background-color:#9DB2BF;
+    -fx-text-fill: #BB9CC0
 }
 .button-buttonTriuniv:pressed {
-    -fx-background-color: #ffffff; /* Warna background button saat ditekan */
+    -fx-text-fill: #ffffff; 
+    /* -fx-background-color: #8d9697;  */
+    -fx-background-color: #acb9bb;
 }
 /*  */
 .label-tritwounivhl{
     -fx-font-family: 'Arial';
     -fx-font-size: 25;
     -fx-font-weight:bold;
-    -fx-text-fill: #01204E;
+    -fx-text-fill: #ffffff;
 }
 .label-lokasiuniv{
     -fx-font-family: 'Arial';
     -fx-font-size: 12;
     -fx-font-weight:normal;
-    -fx-text-fill: #01204E;
+    -fx-text-fill: #ffffff;
 }
 .button-fiturugm{
     -fx-font-family: 'Arial';
     -fx-font-size: 18;
-    -fx-font-weight:normal;
-    /* -fx-text-fill: #948979; */
+    -fx-font-weight:BOLD;
     -fx-text-fill: #000000;
     -fx-background-color: #ffffff;
     -fx-background-radius: 20; /* Radius lengkungan button */
     -fx-padding: 10 20 10 20; 
+    -fx-effect: dropshadow(gaussian, #fbfbff, 5, 0, 0, 0);
 }
 .button-fiturugm:hover {
-    -fx-background-color: #74512D; /* Warna background button saat dihover */
+    -fx-text-fill: #76453B; 
 }
 .button-fiturugm:pressed {
-    -fx-background-color: #ffffff; /* Warna background button saat ditekan */
+    -fx-text-fill: #ffffff; 
+    /* -fx-background-color: #FFF8E3; */
 }
 .button-fiturUh{
     -fx-font-family: 'Arial';
     -fx-font-size: 18;
-    -fx-font-weight:normal;
+    -fx-font-weight:BOLD;
     -fx-text-fill: #000000;
     -fx-background-color: #ffffff;
     -fx-background-radius: 20; /* Radius lengkungan button */
     -fx-padding: 10 20 10 20;
+    -fx-effect: dropshadow(gaussian, #fbfbff, 5, 0, 0, 0);
 }
 .button-fiturUh:hover {
-    -fx-background-color: #A0153E; /* Warna background button saat dihover */
+    -fx-text-fill: #A0153E; /* Warna background button saat dihover */
 } 
 .button-fiturUh:pressed {
-    -fx-background-color: #ffffff; /* Warna background button saat ditekan */
+    -fx-text-fill: #ffffff;
 }
 .button-fiturunm{
     -fx-font-family: 'Arial';
     -fx-font-size: 18;
-    -fx-font-weight:normal;
+    -fx-font-weight:BOLD;
     -fx-text-fill: #000000;
     -fx-background-color: #ffffff;
     -fx-background-radius: 20; /* Radius lengkungan button */
     -fx-padding: 10 20 10 20;
+    -fx-effect: dropshadow(gaussian, #fbfbff, 5, 0, 0, 0);
 }
 .button-fiturunm:hover {
-    -fx-background-color: #F1EF99; /* Warna background button saat dihover */
+    -fx-text-fill: #F1EF99; 
 }
 .button-fiturunm:pressed {
-    -fx-background-color: #ffffff; /* Warna background button saat ditekan */
+    -fx-text-fill: #ffffff; 
 }
 /*  */
 .label-hlpts{
@@ -154,19 +168,23 @@
     -fx-font-size: 40;
     -fx-font-weight:bold;
     -fx-text-fill: #ffffff;
-    -fx-effect: dropshadow(gaussian, #3a5a4f, 0, 0, 3, 3);
+    -fx-effect: dropshadow(gaussian, #5959a0, 3, 1, 1, 1);
 }
 .button-buttonTwouniv{
     -fx-font-family: 'Lato';
-    -fx-font-size: 10;
+    -fx-font-size: 11;
     -fx-font-weight:bold;
-    -fx-text-fill: #3a5a4f;
+    -fx-text-fill: #1e1e1e;
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 5;
+    -fx-effect: dropshadow(gaussian, #ffffff, 5, 0, 0, 0);
 }
 .button-buttonTwouniv:hover{
-    -fx-background-color:#9DB2BF;
+    -fx-text-fill: #BB9CC0
 }
 .button-buttonTwouniv:pressed {
-    -fx-background-color: #ffffff; /* Warna background button saat ditekan */
+    -fx-text-fill: #ffffff; 
+    -fx-background-color: #acb9bb;
 }
 .button-fiturumi{
     -fx-font-family: 'Arial';
@@ -176,12 +194,13 @@
     -fx-background-color: #ffffff;
     -fx-background-radius: 20; /* Radius lengkungan button */
     -fx-padding: 10 20 10 20;
+    -fx-effect: dropshadow(gaussian, #fbfbff, 5, 0, 0, 0);
 }
 .button-fiturumi:hover{
-    -fx-background-color:#0A6847;
+    -fx-text-fill:#0A6847;
 }
 .button-fiturunm:pressed {
-    -fx-background-color: #ffffff; /* Warna background button saat ditekan */
+    -fx-text-fill: #ffffff; /* Warna background button saat ditekan */
 }
 .button-fiturunibos{
     -fx-font-family: 'Arial';
@@ -191,6 +210,7 @@
     -fx-background-color: #ffffff;
     -fx-background-radius: 20; /* Radius lengkungan button */
     -fx-padding: 10 20 10 20;
+    -fx-effect: dropshadow(gaussian, #fbfbff, 5, 0, 0, 0);
 }
 .button-fiturunibos:hover{
     -fx-background-color:#002379;

@@ -100,7 +100,7 @@ public class PTNSDetail {
         });
 
 
-        Image backgroundImage = new Image(getClass().getResourceAsStream("/Images/detailpage.png"));
+        Image backgroundImage = new Image(getClass().getResourceAsStream("/Images/newdetailbg.png"));
 
         // Membuat objek BackgroundImage untuk latar belakang
         BackgroundImage backgroundImg = new BackgroundImage(backgroundImage,
@@ -109,9 +109,8 @@ public class PTNSDetail {
 
         StackPane stackPane = new StackPane();
         StackPane.setMargin(ptnLabel, new Insets(0, 380, 460, 20));
-        StackPane.setMargin(ptnLok,  new Insets(0, 10, 468, 480));
+        StackPane.setMargin(ptnLok,  new Insets(10, 10, 458, 480));
         StackPane.setMargin(ptnStatus,  new Insets(0, 600, 420, 50));
-        // StackPane.setMargin(statusPtn, new Insets(50, 200, 200, 200));
         StackPane.setMargin(btnjalur, new Insets(50, 200, 100, 200));
         StackPane.setMargin(btnfklts, new Insets(50, 200, 0, 200));
         StackPane.setMargin(btnBkt, new Insets(50, 200, -100, 200));
@@ -120,7 +119,7 @@ public class PTNSDetail {
         stackPane.getChildren().addAll( ptnLabel,ptnLok, ptnStatus, btnjalur, btnfklts, btnBkt, backButton);
 
         Scene scene = new Scene( stackPane, 800, 500);      
-        scene.getStylesheets().add(getClass().getResource("/CssStyle/styles.css").toExternalForm());
+        scene.getStylesheets().add(getClass().getResource("/Style/styles.css").toExternalForm());
         stage.setScene(scene);
         stage.show();
     }

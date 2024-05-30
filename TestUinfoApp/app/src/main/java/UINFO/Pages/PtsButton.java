@@ -1,6 +1,7 @@
 package UINFO.Pages;
 
 import UINFO.Models.Kampus;
+import UINFO.Utils.SceneInterface;
 import javafx.geometry.Insets;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -13,7 +14,7 @@ import javafx.scene.layout.BackgroundSize;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 
-public class PtsButton {
+public class PtsButton implements SceneInterface{
     //Encapsulation stage
     private Stage stage;
 
@@ -53,7 +54,7 @@ public class PtsButton {
             ptsession.show();
         });
 
-        Image backgroundImage = new Image(getClass().getResourceAsStream("/Images/PTSbg.png"));
+        Image backgroundImage = new Image(getClass().getResourceAsStream("/Images/newptsdesain.png"));
 
         StackPane stackPane = new StackPane();
         StackPane.setMargin(hlpts,new Insets(20, 15, 400, 0));
@@ -71,7 +72,7 @@ public class PtsButton {
 
 
         Scene scene = new Scene(stackPane, 800, 500);      
-        scene.getStylesheets().add(getClass().getResource("/CssStyle/styles.css").toExternalForm());
+        scene.getStylesheets().add(getClass().getResource("/Style/styles.css").toExternalForm());
         stage.setScene(scene);
         stage.show();
     }

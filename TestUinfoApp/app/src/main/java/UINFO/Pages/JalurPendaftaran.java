@@ -1,10 +1,7 @@
 package UINFO.Pages;
 
-
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
@@ -41,23 +38,6 @@ public class JalurPendaftaran {
     }
 
     private void initializeJalurPendaftaran() {
-        // Map<String, Map<String, Jalur_Pendaftaran_Kampus>> jalurPendaftaranMap = new HashMap<>();
-
-        // for (Kampus kampus : dataJalurPendaftaran) {
-        //     String universitas = kampus.getKampus();
-        //     String jalurPendaftaran = kampus.getJalurPendaftaran();
-        //     String biayaPendaftaran = kampus.getBiayaPendaftaran();
-
-        //     jalurPendaftaranMap.putIfAbsent(universitas, new HashMap<>());
-        //     Map<String, Jalur_Pendaftaran_Kampus> JapenKampusMap = jalurPendaftaranMap.get(universitas);
-
-        //     if (!JapenKampusMap.containsKey(jalurPendaftaran)) {
-        //         Jalur_Pendaftaran_Kampus jalur_PendaftarandanBiaya = new Jalur_Pendaftaran_Kampus(jalurPendaftaran);
-        //         JapenKampusMap.put(jalurPendaftaran, jalur_PendaftarandanBiaya);
-        //         listJalurPendaftaran.add(jalur_PendaftarandanBiaya);
-        //     }
-        //     // JapenKampusMap.get(jalurPendaftaran).addBiayaPendaftaran(biayaPendaftaran);
-        // }
         Map<String, Jalur_Pendaftaran_Kampus> jalurPendaftaranMap = new HashMap<>();
 
         for (Kampus kampus : dataJalurPendaftaran) {
@@ -71,19 +51,20 @@ public class JalurPendaftaran {
         }
     }
 
+    @SuppressWarnings("unchecked")
     public void show() {
         TableView<Jalur_Pendaftaran_Kampus> tableView = new TableView<>();
         
         // Create a single column for TableView
         TableColumn<Jalur_Pendaftaran_Kampus, String> colJalurPendaftaran = new TableColumn<>("Jalur Pendaftaran");
         colJalurPendaftaran.setCellValueFactory(new PropertyValueFactory<>("jalurseleksi"));
-        colJalurPendaftaran.setPrefWidth(270);
+        colJalurPendaftaran.setPrefWidth(260);
 
         TableColumn<Jalur_Pendaftaran_Kampus, String> colBiayaPendaftaran = new TableColumn<>("Biaya Pendaftaran");
         colBiayaPendaftaran.setCellValueFactory(new PropertyValueFactory<>("biayaPendaftaran"));
-        colBiayaPendaftaran.setPrefWidth(230);
+        colBiayaPendaftaran.setPrefWidth(186);
 
-        tableView.setMaxWidth(500);
+        tableView.setMaxWidth(450);
         tableView.setMaxHeight(300);
         tableView.getColumns().addAll(colJalurPendaftaran, colBiayaPendaftaran);
         tableView.setItems(FXCollections.observableArrayList(listJalurPendaftaran));
@@ -100,7 +81,7 @@ public class JalurPendaftaran {
             }
         });
 
-        Image backgroundImage = new Image(getClass().getResourceAsStream("/Images/detailpage.png"));
+        Image backgroundImage = new Image(getClass().getResourceAsStream("/Images/newjapenbg.png"));
 
         BackgroundImage backgroundImg = new BackgroundImage(backgroundImage,
             BackgroundRepeat.NO_REPEAT, BackgroundRepeat.NO_REPEAT, null,
@@ -112,10 +93,11 @@ public class JalurPendaftaran {
         stackPane.getChildren().addAll(tableView, backButton);
 
         Scene scene = new Scene(stackPane, 800, 500);
-        scene.getStylesheets().add(getClass().getResource("/CssStyle/styles.css").toExternalForm());
+        scene.getStylesheets().add(getClass().getResource("/Style/styles.css").toExternalForm());
         stage.setScene(scene);
         stage.show();
     }
+    
     public static class Jalur_Pendaftaran_Kampus {
         private String jalurseleksi;
         private Set<String> biaya;
@@ -136,42 +118,5 @@ public class JalurPendaftaran {
         public String getBiayaPendaftaran() {
             return String.join("\n", biaya);
         }
-
-        
-
-
-        // public String getBiayaPendaftaran() {
-        //     return biayaPendaftaran;
-        // }
-        // public void setBiayaPendaftaran(String biayaPendaftaran) {
-        //     this.biayaPendaftaran = biayaPendaftaran;
-        // }
     }
-
-    // public static class Jalur_Pendaftaran_Kampus {
-    //     private String nama;
-    //     private List<String> jalurlist;
-
-    //     public Jalur_Pendaftaran_Kampus(String nama) {
-    //         this.nama = nama;
-    //         this.jalurlist = new ArrayList<>();
-    //     }
-
-
-    //     public void addBiaya(String biayaPendaftaran) {
-    //         this.addBiaya(biayaPendaftaran);
-    //     }
-
-    //     public String getNama() {
-    //         return nama;
-    //     }
-
-    //     public void addJalur(String jalurpendaftaran) {
-    //         this.jalurlist.add(jalurpendaftaran);
-    //     }
-
-    //     public String getJalurString() {
-    //         return String.join("\n", jalurlist);
-    //     }
-    // }
 }

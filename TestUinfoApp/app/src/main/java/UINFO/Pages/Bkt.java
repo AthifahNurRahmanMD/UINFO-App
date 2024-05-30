@@ -63,10 +63,10 @@ public class Bkt {
         colGolUkt78.setPrefWidth(200);
       
         
-        // tableView.setMaxWidth(1100);
-        // tableView.setMaxHeight(300);
-        // tableView.getColumns().addAll(colFakultas, colJurusan, colBkt, colGolUkt13, colGolUkt46, colGolUkt78);
-        // tableView.setItems(datajurusan_fakultas_kampus);
+        tableView.setMaxWidth(1100);
+        tableView.setMaxHeight(300);
+        tableView.getColumns().addAll(colFakultas, colJurusan, colBkt, colGolUkt13, colGolUkt46, colGolUkt78);
+        tableView.setItems(datajurusan_fakultas_kampus);
 
         tableView.setItems(datajurusan_fakultas_kampus);
 
@@ -94,7 +94,7 @@ public class Bkt {
         stackPane.getChildren().addAll(tableView, backButton);
 
         Scene scene = new Scene(stackPane, 800, 500);
-        scene.getStylesheets().add(getClass().getResource("/CssStyle/styles.css").toExternalForm());
+        scene.getStylesheets().add(getClass().getResource("/Style/styles.css").toExternalForm());
         stage.setScene(scene);
         stage.show();
     }

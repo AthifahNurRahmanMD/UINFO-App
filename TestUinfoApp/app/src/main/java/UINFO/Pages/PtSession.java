@@ -66,7 +66,7 @@ public class PtSession implements SceneInterface  {
         root.setAlignment(Pos.CENTER);
         root.setSpacing(80);
 
-        Image image = new Image("Images/PtSessionBg.png");
+        Image image = new Image("Images/newPtSessionbg.png");
         BackgroundImage  backgroundImage =  new BackgroundImage(
             image, BackgroundRepeat.NO_REPEAT, 
             BackgroundRepeat.NO_REPEAT, BackgroundPosition.CENTER, 
@@ -74,7 +74,7 @@ public class PtSession implements SceneInterface  {
         root.setBackground(new Background(backgroundImage));
 
         Scene scene = new Scene(root, 800, 500);
-        scene.getStylesheets().add(getClass().getResource("/CssStyle/styles.css").toExternalForm());
+        scene.getStylesheets().add(getClass().getResource("/Style/styles.css").toExternalForm());
         stage.setScene(scene);
         stage.show();
     }
