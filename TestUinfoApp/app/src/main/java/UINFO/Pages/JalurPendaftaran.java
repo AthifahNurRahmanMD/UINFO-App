@@ -3,8 +3,10 @@ package UINFO.Pages;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
 import UINFO.Models.Kampus;
 import javafx.collections.FXCollections;
@@ -116,11 +118,11 @@ public class JalurPendaftaran {
     }
     public static class Jalur_Pendaftaran_Kampus {
         private String jalurseleksi;
-        private List<String> biaya;
+        private Set<String> biaya;
 
         public Jalur_Pendaftaran_Kampus(String jalurseleksi) {
             this.jalurseleksi = jalurseleksi;
-            this.biaya = new ArrayList<>();
+            this.biaya = new HashSet<>();
         }
 
         public String getJalurseleksi() {

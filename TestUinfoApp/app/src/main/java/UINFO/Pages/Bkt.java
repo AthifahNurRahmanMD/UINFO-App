@@ -44,6 +44,8 @@ public class Bkt {
         colJurusan.setCellValueFactory(new PropertyValueFactory<>("jurusan"));
         colJurusan.setPrefWidth(160);
 
+
+
         TableColumn<Kampus, String> colBkt = new TableColumn<>("Biaya Kuliah Tunggal");
         colBkt.setCellValueFactory(new PropertyValueFactory<>("bkt"));
         colBkt.setPrefWidth(130);
@@ -55,19 +57,21 @@ public class Bkt {
         TableColumn<Kampus, String> colGolUkt46 = new TableColumn<>("Gol. UKT 4-6");
         colGolUkt46.setCellValueFactory(new PropertyValueFactory<>("golUKT46"));
         colGolUkt46.setPrefWidth(200);
-
+        
         TableColumn<Kampus, String> colGolUkt78 = new TableColumn<>("Gol. UKT 7-8");
         colGolUkt78.setCellValueFactory(new PropertyValueFactory<>("golUKT78"));
         colGolUkt78.setPrefWidth(200);
+      
+        
+        // tableView.setMaxWidth(1100);
+        // tableView.setMaxHeight(300);
+        // tableView.getColumns().addAll(colFakultas, colJurusan, colBkt, colGolUkt13, colGolUkt46, colGolUkt78);
+        // tableView.setItems(datajurusan_fakultas_kampus);
 
-        tableView.setMaxWidth(1100);
-        tableView.setMaxHeight(300);
-        tableView.getColumns().addAll(colFakultas, colJurusan, colBkt, colGolUkt13, colGolUkt46, colGolUkt78);
         tableView.setItems(datajurusan_fakultas_kampus);
 
         Button backButton = new Button("Kembali");
         backButton.setPrefWidth(100);
-        // backButton.getStyleClass().add("button-kembali");
         backButton.setOnAction(e -> {
             if (kampus.getStatus().equals("")) {
                 PTNSDetail ptsScene = new PTNSDetail(stage, kampus);
