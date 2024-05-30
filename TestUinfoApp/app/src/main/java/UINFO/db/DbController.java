@@ -28,9 +28,10 @@ public class DbController {
                         rs.getString("Gol. UKT 1-3"),
                         rs.getString("Gol. UKT 4-6"),
                         rs.getString("Gol. UKT 7-8"),
-                        rs.getString("Alamat"),
                         rs.getString("Status"),
-                        rs.getString("Jalur Pendaftaran")
+                        rs.getString("Alamat"),
+                        rs.getString("Jalur Pendaftaran"),
+                        rs.getString("Biaya Pendaftaran")
                 );
                 data.add(kampus);
             }

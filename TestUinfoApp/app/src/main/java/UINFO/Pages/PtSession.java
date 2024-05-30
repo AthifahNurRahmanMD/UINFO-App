@@ -27,7 +27,7 @@ public class PtSession implements SceneInterface  {
         Label ptIdn = new Label("Perguruan Tinggi di Indonesia");
         ptIdn.getStyleClass().add("label-ptIdn");
 
-        Button ptNButton = createTransparentButton(" Perguruan Tinggi Negeri");
+        Button ptNButton = new Button(" Perguruan Tinggi Negeri");
         ptNButton.getStyleClass().add("button-ptnButton");
         ptNButton.setPrefWidth(225);
         ptNButton.setPrefHeight(50);
@@ -37,8 +37,7 @@ public class PtSession implements SceneInterface  {
             ptnButtonScene.show();
         });
 
-
-        Button ptSButton = createTransparentButton(" Perguruan Tinggi Swasta");
+        Button ptSButton = new Button(" Perguruan Tinggi Swasta");
         ptSButton.getStyleClass().add("button-ptsButton");
         ptSButton.setPrefWidth(225);
         ptSButton.setPrefHeight(50);
@@ -63,24 +62,20 @@ public class PtSession implements SceneInterface  {
         vbox.setSpacing(35);
         vbox.getChildren().addAll(ptNButton, ptSButton, backButton);
 
-
         VBox root = new VBox(vboxA, vbox);
         root.setAlignment(Pos.CENTER);
         root.setSpacing(80);
 
         Image image = new Image("Images/PtSessionBg.png");
-        BackgroundImage  backgroundImage =  new BackgroundImage(image, BackgroundRepeat.NO_REPEAT, BackgroundRepeat.NO_REPEAT, BackgroundPosition.CENTER, new BackgroundSize(1, 1, true, true, false, false));
+        BackgroundImage  backgroundImage =  new BackgroundImage(
+            image, BackgroundRepeat.NO_REPEAT, 
+            BackgroundRepeat.NO_REPEAT, BackgroundPosition.CENTER, 
+            new BackgroundSize(1, 1, true, true, false, false));
         root.setBackground(new Background(backgroundImage));
 
         Scene scene = new Scene(root, 800, 500);
         scene.getStylesheets().add(getClass().getResource("/CssStyle/styles.css").toExternalForm());
         stage.setScene(scene);
         stage.show();
-    }
-
-    private Button createTransparentButton(String buttonText) {
-        Button button = new Button(buttonText);
-        // button.setStyle("-fx-background-color: transparent;");
-        return button;
     }
 }

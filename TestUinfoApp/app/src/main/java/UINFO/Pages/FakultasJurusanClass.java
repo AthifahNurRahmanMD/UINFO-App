@@ -38,36 +38,36 @@ public class FakultasJurusanClass {
     }
 
     private void initializeFakultasList() {
-        Map<String, Map<String, Fakultas_Jurusan>> fakultasjurusanMap =  new HashMap<>();
+        // Map<String, Map<String, Fakultas_Jurusan>> fakultasjurusanMap =  new HashMap<>();
 
-        for (Kampus kampus : datajurusan_fakultas_kampus){
-            String universitas =  kampus.getKampus();
-            String fakultas = kampus.getFakultas();
-            String jurusan = kampus.getJurusan();
+        // for (Kampus kampus : datajurusan_fakultas_kampus){
+        //     String universitas =  kampus.getKampus();
+        //     String fakultas = kampus.getFakultas();
+        //     String jurusan = kampus.getJurusan();
             
-            fakultasjurusanMap.putIfAbsent(universitas, new HashMap<>());
-            Map<String, Fakultas_Jurusan> fakultasMap =  fakultasjurusanMap.get(universitas);
+        //     fakultasjurusanMap.putIfAbsent(universitas, new HashMap<>());
+        //     Map<String, Fakultas_Jurusan> fakultasMap =  fakultasjurusanMap.get(universitas);
             
-            if (!fakultasMap.containsKey(fakultas)){
-                Fakultas_Jurusan fakultasjurusan =  new Fakultas_Jurusan(fakultas);
-                fakultasMap.put(fakultas, fakultasjurusan);
-                listFakultas.add(fakultasjurusan);
-            }
-            fakultasMap.get(fakultas).addJurusan(jurusan);
-        }
-
-
-        // Map<String, Fakultas_Jurusan> fakultasMap = new HashMap<>();
-
-        // for (Kampus kampus : datajurusan_fakultas_kampus) {
-        //     String fakultasdanjurusan_kampus = kampus.getFakultas();
-        //     if (!fakultasMap.containsKey(fakultasdanjurusan_kampus)) {
-        //         Fakultas_Jurusan fakultasjurusan = new Fakultas_Jurusan(fakultasdanjurusan_kampus);
-        //         fakultasMap.put(fakultasdanjurusan_kampus, fakultasjurusan);
+        //     if (!fakultasMap.containsKey(fakultas)){
+        //         Fakultas_Jurusan fakultasjurusan =  new Fakultas_Jurusan(fakultas);
+        //         fakultasMap.put(fakultas, fakultasjurusan);
         //         listFakultas.add(fakultasjurusan);
         //     }
-        //     fakultasMap.get(fakultasdanjurusan_kampus).addJurusan(kampus.getJurusan());
+        //     fakultasMap.get(fakultas).addJurusan(kampus.getJurusan());
         // }
+
+
+        Map<String, Fakultas_Jurusan> fakultasMap = new HashMap<>();
+
+        for (Kampus kampus : datajurusan_fakultas_kampus) {
+            String fakultasdanjurusan_kampus = kampus.getFakultas();
+            if (!fakultasMap.containsKey(fakultasdanjurusan_kampus)) {
+                Fakultas_Jurusan fakultasjurusan = new Fakultas_Jurusan(fakultasdanjurusan_kampus);
+                fakultasMap.put(fakultasdanjurusan_kampus, fakultasjurusan);
+                listFakultas.add(fakultasjurusan);
+            }
+            fakultasMap.get(fakultasdanjurusan_kampus).addJurusan(kampus.getJurusan());
+        }
     }
 
     public void show() {

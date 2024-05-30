@@ -11,7 +11,7 @@ public class Kampus {
     }
 
     public Kampus(int id, String kampus, String fakultas, String jurusan, String bkt, String golUKT13, String golUKT46,
-            String golUKT78, String alamat, String status, String jalurPendaftaran) {
+            String golUKT78, String alamat, String status, String jalurPendaftaran, String biayaPendaftaran) {
         this.id = id;
         this.kampus = kampus;
         this.fakultas =  fakultas;
@@ -23,10 +23,11 @@ public class Kampus {
         this.alamat = alamat;
         this.status = status;
         this.jalurPendaftaran =  jalurPendaftaran;
+        this.biayaPendaftaran = biayaPendaftaran;
     }
 
     public Kampus(String id, String kampus, String fakultas, String jurusan, String bkt, String golUKT13, String golUKT46,
-            String golUKT78, String alamat, String status, String jalurPendaftaran) {
+            String golUKT78, String alamat, String status, String jalurPendaftaran, String biayaPendaftaran) {
         this.id = Integer.parseInt(id);
         this.kampus = kampus;
         this.fakultas = fakultas;
@@ -38,6 +39,7 @@ public class Kampus {
         this.alamat = alamat;
         this.status = status;
         this.jalurPendaftaran = jalurPendaftaran;
+        this.biayaPendaftaran = biayaPendaftaran;
     }
 
     private int id;
@@ -52,6 +54,7 @@ public class Kampus {
     private String alamat;
     private String status;
     private String jalurPendaftaran;
+    private String biayaPendaftaran;
 
     public int getId() {
         return id;
@@ -119,6 +122,14 @@ public class Kampus {
 
     public void setJalurPendaftaran(String jalurPendaftaran) {
         this.jalurPendaftaran = jalurPendaftaran;
+    }
+
+    public String getBiayaPendaftaran() {
+        return biayaPendaftaran;
+    }
+    
+    public void setBiayaPendaftaran(String biayaPendaftaran){
+        this.biayaPendaftaran = biayaPendaftaran;
     }
 
 
