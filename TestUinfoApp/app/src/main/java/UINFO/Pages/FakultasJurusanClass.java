@@ -1,7 +1,6 @@
 package UINFO.Pages;
 
 import UINFO.Models.Kampus;
-import UINFO.db.DbController;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.geometry.Insets;

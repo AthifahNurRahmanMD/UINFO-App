@@ -57,7 +57,7 @@ public class PTNSDetail {
         Button btnBkt = new Button("BKT");
         btnBkt.setPrefWidth(200);
         btnBkt.setOnAction(e->{
-            Bkt  bkt = new Bkt(stage);
+            Bkt  bkt = new Bkt(stage, kampus, dataKampus);
             bkt.show();
         });
 

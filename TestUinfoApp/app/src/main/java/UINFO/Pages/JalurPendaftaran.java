@@ -7,7 +7,6 @@ import java.util.List;
 import java.util.Map;
 
 import UINFO.Models.Kampus;
-import UINFO.Pages.FakultasJurusanClass.Fakultas_Jurusan;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.geometry.Insets;
