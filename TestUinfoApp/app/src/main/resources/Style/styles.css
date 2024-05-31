@@ -255,15 +255,22 @@
 }
 .text-aboutptnbh1 {
     -fx-font-family: 'Intro Rust';
-    -fx-font-size: 15;
+    -fx-font-size: 20;
     -fx-font-weight:BOLD;
     -fx-text-fill: #f0f5f3;
     -fx-effect: dropshadow(gaussian, #C738BD, 6, 0, 0, 0);
 }
 .text-aboutptnbh2 {
     -fx-font-family: 'Intro Rust';
+    -fx-font-size: 15;
+    -fx-font-weight:normal;
+    -fx-text-fill: #ffffff;
+    -fx-effect: dropshadow(gaussian, #C738BD, 6, 0, 0, 0);
+}
+.text-aboutptnbh3 {
+    -fx-font-family: 'Intro Rust';
     -fx-font-size: 10;
     -fx-font-weight:normal;
-    -fx-text-fill: #C738BD;
-    /* -fx-effect: dropshadow(gaussian, #C738BD, 6, 0, 0, 0); */
+    -fx-text-fill: #000000;
+    -fx-effect: dropshadow(gaussian, #ffffff, 3, 1, 0, 0);
 }
