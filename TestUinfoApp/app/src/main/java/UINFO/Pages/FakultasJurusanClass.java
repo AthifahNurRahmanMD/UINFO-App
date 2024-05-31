@@ -87,6 +87,7 @@ public class FakultasJurusanClass {
         tableView.setItems(FXCollections.observableArrayList(listFakultas));
 
         Button backButton = new Button("Kembali");
+        backButton.getStyleClass().add("button-backbutton");
         backButton.setPrefWidth(100);
         backButton.setOnAction(e -> {
             if (kampus.getStatus().equals("")) {

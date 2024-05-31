@@ -33,8 +33,19 @@ public class PTNSDetail {
         Label ptnLok =  new Label(kampus.getAlamat());
         ptnLok.getStyleClass().add("label-lokasiuniv");
 
-        Label ptnStatus =  new Label(kampus.getStatus());
-        ptnStatus.getStyleClass().add("label-lokasiuniv");
+        // Label ptnStatus =  new Label(kampus.getStatus());
+        // ptnStatus.getStyleClass().add("label-lokasiuniv");
+        Button ptnStatus =  new Button(kampus.getStatus());
+        ptnStatus.getStyleClass().add("button-statusptn");
+        ptnStatus.setOnAction(e ->{
+            if (kampus.getStatus().equals("PTN-BH")) {
+                PTN_BH aboutPtn_BH = new PTN_BH(stage, kampus);
+                aboutPtn_BH.show();
+            } else {
+                PTN_NONBH aboutPtn_NONBH = new PTN_NONBH(stage, kampus);
+                aboutPtn_NONBH.show();
+            }
+        });
 
         dbController =  new DbController();
         ObservableList<Kampus> dataKampus = dbController.getdetailuniv(kampus.getKampus());
@@ -54,10 +65,18 @@ public class PTNSDetail {
             fadanju.show();
         });
 
-        Button btnBkt = new Button("BKT");
+        Button btnBkt;
+        if (kampus.getStatus().equalsIgnoreCase("Swasta")) {
+            btnBkt = new Button("Biaya Pangkal");
+            btnBkt.getStyleClass().add("button-fitur" + kampus.getKampus().toLowerCase().replace(" ", ""));
+        } else {
+            btnBkt = new Button("BKT");
+            btnBkt.getStyleClass().add("button-fitur" + kampus.getKampus().toLowerCase().replace(" ", ""));
+        }
         btnBkt.setPrefWidth(200);
-        btnBkt.setOnAction(e->{
-            Bkt  bkt = new Bkt(stage, kampus, dataKampus);
+        btnBkt.setOnAction(e -> {
+            boolean isPrivate = kampus.getStatus().equalsIgnoreCase("Swasta");
+            Bkt bkt = new Bkt(stage, kampus, dataKampus, isPrivate);
             bkt.show();
         });
 
@@ -89,6 +108,7 @@ public class PTNSDetail {
 
         Button backButton = new Button("Kembali");
         backButton.setPrefWidth(100);
+        backButton.getStyleClass().add("button-backbutton");
         backButton.setOnAction(e -> {
             if (kampus.getStatus().equals("")){
                 PtsButton ptsScene =  new PtsButton(stage);

@@ -31,7 +31,7 @@ public class PtsButton implements SceneInterface{
         Button btnUmi =  new Button("       UNIVERSITAS\nMUSLIM INDONESIA ");
         btnUmi.getStyleClass().add("button-buttonTwouniv");
         btnUmi.setOnAction(e -> {
-            Kampus umiKampus = new Kampus(0, "Universitas Muslim Indonesia", "Jl. Urip Sumuharjo KM.5\nMakassar, Sulawesi Selatan 90231. ","");
+            Kampus umiKampus = new Kampus(0, "Universitas Muslim Indonesia", "Jl. Urip Sumuharjo KM.5\nMakassar, Sulawesi Selatan 90231. ","Swasta");
             PTNSDetail ptsDetailUMI = new PTNSDetail(stage, umiKampus);
             ptsDetailUMI.show();
         });
@@ -40,14 +40,13 @@ public class PtsButton implements SceneInterface{
         Button btnUNIBOS =  new Button("UNIVERSITAS BOSOWA");
         btnUNIBOS.getStyleClass().add("button-buttonTwouniv");
         btnUNIBOS.setOnAction(e -> {
-            Kampus unibosKampus = new Kampus(0, "Universitas Bosowa ", "Jl. Urip Sumoharjo KM.4\nMakassar, Sulawesi Selatan, 90231","");
+            Kampus unibosKampus = new Kampus(0, "Universitas Bosowa ", "Jl. Urip Sumoharjo KM.4\nMakassar, Sulawesi Selatan, 90231","Swasta");
             PTNSDetail ptsDetailUNIBOS = new PTNSDetail(stage,unibosKampus);
             ptsDetailUNIBOS.show();
        });
 
-
-
         Button backButton = new Button("Kembali");
+        backButton.getStyleClass().add("button-backbutton");
         backButton.setPrefWidth(100);
         backButton.setOnAction(e -> {
             PtSession ptsession =  new PtSession(stage);

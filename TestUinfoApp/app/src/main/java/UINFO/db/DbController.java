@@ -20,18 +20,19 @@ public class DbController {
 			ResultSet rs = pstmt.executeQuery();
             while (rs.next()) {
                 Kampus kampus = new Kampus(
-                        rs.getString("id"),
+                        rs.getInt("id"),
                         rs.getString("Kampus"),
                         rs.getString("Fakultas"),
                         rs.getString("Jurusan"),
+                        rs.getString("Biaya Pangkal"),
                         rs.getString("Biaya Kuliah Tunggal"),
                         rs.getString("Gol. UKT 1-3"),
                         rs.getString("Gol. UKT 4-6"),
                         rs.getString("Gol. UKT 7-8"),
-                        rs.getString("Status"),
                         rs.getString("Alamat"),
-                        rs.getString("Jalur Pendaftaran"),
-                        rs.getString("Biaya Pendaftaran")
+                        rs.getString("Status"),
+                        rs.getString("Biaya Pendaftaran"),
+                        rs.getString("Jalur Pendaftaran")
                 );
                 data.add(kampus);
             }

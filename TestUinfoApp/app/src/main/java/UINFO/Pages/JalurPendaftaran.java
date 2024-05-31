@@ -70,6 +70,7 @@ public class JalurPendaftaran {
         tableView.setItems(FXCollections.observableArrayList(listJalurPendaftaran));
 
         Button backButton = new Button("Kembali");
+        backButton.getStyleClass().add("button-backbutton");
         backButton.setPrefWidth(100);
         backButton.setOnAction(e -> {
             if (kampus.getStatus().equals("")) {

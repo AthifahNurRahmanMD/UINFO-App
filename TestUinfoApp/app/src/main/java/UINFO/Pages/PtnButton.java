@@ -52,6 +52,7 @@ public class PtnButton {
        });
 
         Button backButton = new Button("Kembali");
+        backButton.getStyleClass().add("button-backbutton");
         backButton.setPrefWidth(100);
         backButton.setOnAction(e -> {
             PtSession ptsession =  new PtSession(stage);

@@ -2,6 +2,21 @@ package UINFO.Models;
 
 public class Kampus {
 
+    private int id;
+    private String kampus;
+    private String fakultas;
+    private String jurusan;
+    private String biayaPangkal;
+    private String biayaKuliahTunggal;
+    private String golUKT13;
+    private String golUKT46;
+    private String golUKT78;
+    private String alamat;
+    private String status;
+    private String biayaPendaftaran;
+    private String jalurPendaftaran;
+    
+    // Constructors, getters, and setters
 
     public Kampus(int id, String kampus, String alamat, String status) {
         this.id = id;
@@ -10,52 +25,44 @@ public class Kampus {
         this.status = status;
     }
 
-    public Kampus(int id, String kampus, String fakultas, String jurusan, String bkt, String golUKT13, String golUKT46,
-            String golUKT78, String alamat, String status, String jalurPendaftaran, String biayaPendaftaran) {
+    // Constructor untuk biaya tunggal dan pangkal
+    public Kampus(int id, String kampus, String fakultas, String jurusan, String biayaPangkal, String biayaKuliahTunggal, String golUKT13, String golUKT46, String golUKT78, String alamat, String status,String biayaPendaftaran, String jalurPendaftaran) {
+        // Inisialisasi properti
         this.id = id;
         this.kampus = kampus;
-        this.fakultas =  fakultas;
+        this.fakultas = fakultas;
         this.jurusan = jurusan;
-        this.bkt = bkt;
+        this.biayaPangkal = biayaPangkal;
+        this.biayaKuliahTunggal = biayaKuliahTunggal;
         this.golUKT13 = golUKT13;
         this.golUKT46 = golUKT46;
         this.golUKT78 = golUKT78;
         this.alamat = alamat;
         this.status = status;
-        this.jalurPendaftaran =  jalurPendaftaran;
         this.biayaPendaftaran = biayaPendaftaran;
+        this.jalurPendaftaran = jalurPendaftaran;
     }
 
-    public Kampus(String id, String kampus, String fakultas, String jurusan, String bkt, String golUKT13, String golUKT46,
-            String golUKT78, String alamat, String status, String jalurPendaftaran, String biayaPendaftaran) {
+    public Kampus(String id, String kampus, String fakultas, String jurusan, String biaya, String golUKT13, String golUKT46,
+            String golUKT78, String alamat, String status, String jalurPendaftaran) {
         this.id = Integer.parseInt(id);
         this.kampus = kampus;
         this.fakultas = fakultas;
         this.jurusan = jurusan;
-        this.bkt = bkt;
         this.golUKT13 = golUKT13;
         this.golUKT46 = golUKT46;
         this.golUKT78 = golUKT78;
         this.alamat = alamat;
         this.status = status;
         this.jalurPendaftaran = jalurPendaftaran;
+    }
+    
+    public String getBiayaPendaftaran() {
+        return biayaPendaftaran;
+    }
+    public void setBiayaPendaftaran(String biayaPendaftaran) {
         this.biayaPendaftaran = biayaPendaftaran;
     }
-
-    private int id;
-
-    private String kampus;
-    private String fakultas;
-    private String jurusan;
-    private String bkt;
-    private String golUKT13;
-    private String golUKT46;
-    private String golUKT78;
-    private String alamat;
-    private String status;
-    private String jalurPendaftaran;
-    private String biayaPendaftaran;
-
     public int getId() {
         return id;
     }
@@ -80,12 +87,24 @@ public class Kampus {
     public void setJurusan(String jurusan) {
         this.jurusan = jurusan;
     }
-    public String getBkt() {
-        return bkt;
+    // Getter dan setter untuk biaya pangkal
+    public String getBiayaPangkal() {
+        return biayaPangkal;
     }
-    public void setBkt(String bkt) {
-        this.bkt = bkt;
+
+    public void setBiayaPangkal(String biayaPangkal) {
+        this.biayaPangkal = biayaPangkal;
     }
+
+    // Getter dan setter untuk biaya kuliah tunggal
+    public String getBiayaKuliahTunggal() {
+        return biayaKuliahTunggal;
+    }
+
+    public void setBiayaKuliahTunggal(String biayaKuliahTunggal) {
+        this.biayaKuliahTunggal = biayaKuliahTunggal;
+    }
+    
     public String getGolUKT13() {
         return golUKT13;
     }
@@ -101,7 +120,7 @@ public class Kampus {
     public String getGolUKT78() {
         return golUKT78;
     }
-    public void setGolUKT79(String golUKT78) {
+    public void setGolUKT78(String golUKT78) {
         this.golUKT78 = golUKT78;
     }
     public String getAlamat() {
@@ -123,14 +142,5 @@ public class Kampus {
     public void setJalurPendaftaran(String jalurPendaftaran) {
         this.jalurPendaftaran = jalurPendaftaran;
     }
-
-    public String getBiayaPendaftaran() {
-        return biayaPendaftaran;
-    }
-    
-    public void setBiayaPendaftaran(String biayaPendaftaran){
-        this.biayaPendaftaran = biayaPendaftaran;
-    }
-
 
 }
