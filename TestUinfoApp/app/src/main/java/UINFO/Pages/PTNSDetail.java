@@ -1,5 +1,6 @@
 package UINFO.Pages;
 
+import UINFO.Forum.Forum;
 import UINFO.Models.Kampus;
 import UINFO.db.DbController;
 import javafx.collections.ObservableList;
@@ -41,10 +42,10 @@ public class PTNSDetail {
             if (kampus.getStatus().equals("PTN-BH")) {
                 PTN_BH aboutPtn_BH = new PTN_BH(stage, kampus);
                 aboutPtn_BH.show();
-            } else {
+            } else if (kampus.getStatus().equals("PTN-NONBH")){
                 PTN_NONBH aboutPtn_NONBH = new PTN_NONBH(stage, kampus);
                 aboutPtn_NONBH.show();
-            }
+            } 
         });
 
         dbController =  new DbController();
@@ -78,6 +79,14 @@ public class PTNSDetail {
             boolean isPrivate = kampus.getStatus().equalsIgnoreCase("Swasta");
             Bkt bkt = new Bkt(stage, kampus, dataKampus, isPrivate);
             bkt.show();
+        });
+
+        Button btnForum = new Button("Forum");
+        btnForum.setPrefWidth(200);
+        btnForum.getStyleClass().add("button-fiturUh");
+        btnForum.setOnAction(e->{
+            Forum forum = new Forum(stage, kampus);
+            forum.showForum();
         });
 
         if (kampus.getKampus().equals("Universitas Hasanuddin")){
@@ -134,9 +143,9 @@ public class PTNSDetail {
         StackPane.setMargin(btnjalur, new Insets(50, 200, 100, 200));
         StackPane.setMargin(btnfklts, new Insets(50, 200, 0, 200));
         StackPane.setMargin(btnBkt, new Insets(50, 200, -100, 200));
-        StackPane.setMargin(backButton, new Insets(400, 550, 15, 0));
+        StackPane.setMargin(btnForum, new Insets(50,200,-200,200));        StackPane.setMargin(backButton, new Insets(400, 550, 15, 0));
         stackPane.setBackground(new Background(backgroundImg));
-        stackPane.getChildren().addAll( ptnLabel,ptnLok, ptnStatus, btnjalur, btnfklts, btnBkt, backButton);
+        stackPane.getChildren().addAll( ptnLabel,ptnLok, ptnStatus, btnjalur, btnfklts, btnBkt, backButton, btnForum);
 
         Scene scene = new Scene( stackPane, 800, 500);      
         scene.getStylesheets().add(getClass().getResource("/Style/styles.css").toExternalForm());

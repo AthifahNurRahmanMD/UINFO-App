@@ -253,24 +253,62 @@
     -fx-text-fill: #f0f5f3;
     -fx-effect: dropshadow(gaussian, #C738BD, 6, 0, 0, 0);
 }
-.text-aboutptnbh1 {
+.text-aboutptnbh1{
     -fx-font-family: 'Intro Rust';
-    -fx-font-size: 20;
+    -fx-font-size: 17;
     -fx-font-weight:BOLD;
     -fx-text-fill: #f0f5f3;
     -fx-effect: dropshadow(gaussian, #C738BD, 6, 0, 0, 0);
 }
-.text-aboutptnbh2 {
+.text-aboutptnbh2{
     -fx-font-family: 'Intro Rust';
     -fx-font-size: 15;
     -fx-font-weight:normal;
     -fx-text-fill: #ffffff;
     -fx-effect: dropshadow(gaussian, #C738BD, 6, 0, 0, 0);
 }
-.text-aboutptnbh3 {
+.text-aboutptnbh3{
     -fx-font-family: 'Intro Rust';
-    -fx-font-size: 10;
+    -fx-font-size: 12;
     -fx-font-weight:normal;
     -fx-text-fill: #000000;
     -fx-effect: dropshadow(gaussian, #ffffff, 3, 1, 0, 0);
+}
+.text-ptnbh4{
+    -fx-font-family: 'Intro Rust';
+    -fx-font-size: 12;
+    -fx-font-weight:normal;
+    -fx-text-fill: #ffffff;
+    -fx-effect: dropshadow(gaussian, #C738BD, 6, 0, 0, 0);
+}
+
+
+.button-kirimpesan{
+    -fx-background-color: transparent;
+    -fx-padding: 15px;
+    -fx-border-radius: 5px;
+    -fx-margin-bottom: 10px;
+    -fx-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.05);
+}
+
+.transparent-like-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+    -fx-background-insets: 0;
+}
+
+.button-kirimpesan{
+    -fx-background-color: transparent;
+    -fx-padding: 15px;
+    -fx-border-radius: 5px;
+    -fx-margin-bottom: 10px;
+    -fx-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.05);
+}
+
+.like-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: blue;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
 }

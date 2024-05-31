@@ -87,7 +87,7 @@ public class Bkt {
             }
         });
 
-        Image backgroundImage = new Image(getClass().getResourceAsStream("/Images/detailpage.png"));
+        Image backgroundImage = new Image(getClass().getResourceAsStream("/Images/newPtSessionbg.png"));
 
         BackgroundImage backgroundImg = new BackgroundImage(backgroundImage,
                 BackgroundRepeat.NO_REPEAT, BackgroundRepeat.NO_REPEAT, null,
