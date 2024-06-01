@@ -200,7 +200,7 @@
 .button-fiturumi{
     -fx-font-family: 'Arial';
     -fx-font-size: 18;
-    -fx-font-weight:normal;
+    -fx-font-weight:bold;
     -fx-text-fill: #000000;
     -fx-background-color: #ffffff;
     -fx-background-radius: 20; /* Radius lengkungan button */
@@ -216,7 +216,7 @@
 .button-fiturunibos{
     -fx-font-family: 'Arial';
     -fx-font-size: 18;
-    -fx-font-weight:normal;
+    -fx-font-weight:bold;
     -fx-text-fill: #000000;
     -fx-background-color: #ffffff;
     -fx-background-radius: 20; /* Radius lengkungan button */

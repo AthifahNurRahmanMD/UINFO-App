@@ -38,7 +38,7 @@ public class CustomListCell extends ListCell<CommentCell> {
             });
 
             VBox vbox = new VBox(5, usernameText, commentText, likeButton);
-            HBox hbox = new HBox(30, profileImageView, vbox);
+            HBox hbox = new HBox(10, profileImageView, vbox);
 
             // HBox hbox = new HBox(10, profileImageView, usernameText, commentText);
             setGraphic(hbox);

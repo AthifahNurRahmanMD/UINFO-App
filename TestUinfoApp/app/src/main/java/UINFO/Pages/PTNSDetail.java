@@ -83,7 +83,6 @@ public class PTNSDetail {
 
         Button btnForum = new Button("Forum");
         btnForum.setPrefWidth(200);
-        btnForum.getStyleClass().add("button-fiturUh");
         btnForum.setOnAction(e->{
             Forum forum = new Forum(stage, kampus);
             forum.showForum();
@@ -93,33 +92,38 @@ public class PTNSDetail {
             btnjalur.getStyleClass().add("button-fiturUh");
             btnfklts.getStyleClass().add("button-fiturUh");
             btnBkt.getStyleClass().add("button-fiturUh");
+            btnForum.getStyleClass().add("button-fiturUh");
         }else if(
             kampus.getKampus().equals("Universitas Negeri Makassar")){
             btnjalur.getStyleClass().add("button-fiturunm");
             btnfklts.getStyleClass().add("button-fiturunm");
             btnBkt.getStyleClass().add("button-fiturunm");
+            btnForum.getStyleClass().add("button-fiturunm");
         }else if(
             kampus.getKampus().equals("Universitas Gadjah Mada")){
             btnjalur.getStyleClass().add("button-fiturugm");
             btnfklts.getStyleClass().add("button-fiturugm");
             btnBkt.getStyleClass().add("button-fiturugm");
+            btnForum.getStyleClass().add("button-fiturugm");
         }else if(
             kampus.getKampus().equals("Universitas Muslim Indonesia")){
             btnjalur.getStyleClass().add("button-fiturumi");
             btnfklts.getStyleClass().add("button-fiturumi");
             btnBkt.getStyleClass().add("button-fiturumi");
+            btnForum.getStyleClass().add("button-fiturumi");
         }else if(
             kampus.getKampus().equals("Universitas Bosowa ")){
             btnjalur.getStyleClass().add("button-fiturunibos");
             btnfklts.getStyleClass().add("button-fiturunibos");
             btnBkt.getStyleClass().add("button-fiturunibos");
+            btnForum.getStyleClass().add("button-fiturunibos");
         }
 
         Button backButton = new Button("Kembali");
         backButton.setPrefWidth(100);
         backButton.getStyleClass().add("button-backbutton");
         backButton.setOnAction(e -> {
-            if (kampus.getStatus().equals("")){
+            if (kampus.getStatus().equals("Swasta")){
                 PtsButton ptsScene =  new PtsButton(stage);
                 ptsScene.show();
             } else{
