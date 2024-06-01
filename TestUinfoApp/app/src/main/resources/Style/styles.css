@@ -288,14 +288,36 @@
     -fx-padding: 15px;
     -fx-border-radius: 5px;
     -fx-margin-bottom: 10px;
-    -fx-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.05);
+    /* -fx-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.05); */
 }
 
 .transparent-like-button {
     -fx-background-color: transparent;
     -fx-border-color: transparent;
     -fx-border-width: 0;
-    -fx-background-insets: 0;
+    -fx-background-insets:0;
+}
+
+.button-kirimpesan{
+    -fx-background-color: transparent;
+    -fx-padding: 15px;
+    -fx-border-radius: 5px;
+    -fx-margin-bottom: 10px;
+    /* -fx-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.05); */
+}
+
+.like-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: blue;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+}
+.area-comment{
+    /* -fx-width: 600px; */
+    -fx-margin: 0 auto;
+    /* -fx-border: none; */
+    -fx-padding: 20px;
+    -fx-box-shadow: 0 2px 5px rgba(75, 69, 69, 0.1);
 }
 
 .button-kirimpesan{
@@ -304,11 +326,4 @@
     -fx-border-radius: 5px;
     -fx-margin-bottom: 10px;
     -fx-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.05);
-}
-
-.like-button {
-    -fx-background-color: transparent;
-    -fx-text-fill: blue;
-    -fx-font-weight: bold;
-    -fx-cursor: hand;
 }

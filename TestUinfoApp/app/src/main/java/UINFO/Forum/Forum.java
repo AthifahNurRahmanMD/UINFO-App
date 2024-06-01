@@ -23,6 +23,7 @@ public class Forum {
     ObservableList<CommentCell> comments = FXCollections.observableArrayList();
     private Kampus kampus;
 
+
     public Forum(Stage stage, Kampus kampus) {
         this.stage = stage;
         this.kampus = kampus;
@@ -30,10 +31,16 @@ public class Forum {
         loadComments();
     }
 
+    // public Forum(Kampus kampus){
+    //     this.kampus = kampus;
+    //     this.comments = FXCollections.observableArrayList();
+    //     loadComments();
+    // }
+
     public void showForum() {
         ListView<CommentCell> commentListView = new ListView<>(comments);
         commentListView.setCellFactory(param -> new CustomListCell());
-        commentListView.setPrefHeight(200);
+        commentListView.setPrefHeight(200); // Atur ukuran tinggi ListView jika diperlukan
 
         TextArea commentArea = new TextArea();
         commentArea.setMaxWidth(300);
@@ -48,6 +55,7 @@ public class Forum {
         ImageView kirimPesanImageView = new ImageView(kirimPesan);
         kirimPesanImageView.setFitWidth(30);
         kirimPesanImageView.setFitHeight(30);
+        // kirimPesanImageView.getStyleClass().add("png-kirimpesan");
 
         Button kirimPesanButton = new Button();
         kirimPesanButton.setGraphic(kirimPesanImageView);
@@ -65,7 +73,7 @@ public class Forum {
             }
         });
 
-        Image UserPng = new Image(getClass().getResourceAsStream("/Images/user.jpg"));
+        Image UserPng = new Image(getClass().getResourceAsStream("/Images/user.png"));
         ImageView userFoto = new ImageView(UserPng);
         userFoto.setFitWidth(30);
         userFoto.setFitHeight(30);
@@ -85,7 +93,8 @@ public class Forum {
             }
         });
 
-        VBox vbox = new VBox(2, commentListView, commentArea, kirimPesanButton, backButton, userFoto);
+        
+        VBox vbox = new VBox(2, commentListView, commentArea, kirimPesanButton, backButton,userFoto);
         vbox.setPadding(new Insets(10));
 
         StackPane stackPane = new StackPane();
@@ -99,6 +108,7 @@ public class Forum {
         stage.show();
     }
 
+    
     public void addComment(String username, String comment) {
         comments.add(new CommentCell(username, comment, 0));
         saveCommentToDatabase(username, comment);
@@ -113,4 +123,5 @@ public class Forum {
         DbManager dbManager = new DbManager();
         dbManager.insertComment(username, comment);
     }
+
 }
