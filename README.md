@@ -52,21 +52,31 @@ https://github.com/AthifahNurRahmanMD/UINFO-App.git
 
 # Screenshot
 _Scene Masuk_
+![scenemasuk](https://github.com/AthifahNurRahmanMD/UINFO-App/blob/9f1aa1ba390791cfe1ed480437961157db9bce6c/readme/scenemasuk.jpg)
 
 _Scene Peguruan Tinggi_
+![sceneperguruantinggi](https://github.com/AthifahNurRahmanMD/UINFO-App/blob/9f1aa1ba390791cfe1ed480437961157db9bce6c/readme/sceneperguruantinggi.jpg)
 
 _Scene Perguruan Tinggi Negeri_
+![sceneptn](https://github.com/AthifahNurRahmanMD/UINFO-App/blob/9f1aa1ba390791cfe1ed480437961157db9bce6c/readme/sceneptn.jpg)
 
 _Scene Perguruan Tinggi Swasta_
+![scenepts](https://github.com/AthifahNurRahmanMD/UINFO-App/blob/9f1aa1ba390791cfe1ed480437961157db9bce6c/readme/scenepts.jpg)
 
 _Scene Detail Universitas_
+![scenedetailuniv](https://github.com/AthifahNurRahmanMD/UINFO-App/blob/9f1aa1ba390791cfe1ed480437961157db9bce6c/readme/scenedetailuniv.jpg)
 
 _Scene Jalur Pendaftaran_
+![scenejalurpendaftaran](https://github.com/AthifahNurRahmanMD/UINFO-App/blob/9f1aa1ba390791cfe1ed480437961157db9bce6c/readme/scenejalurpendaftaran.jpg)
 
 _Scene Jurusan/Fakultas_
+![scenejurusanfakultas](https://github.com/AthifahNurRahmanMD/UINFO-App/blob/9f1aa1ba390791cfe1ed480437961157db9bce6c/readme/scenejurusanfakultas.jpg)
 
 _Scene BKT_
+![scenebkt](https://github.com/AthifahNurRahmanMD/UINFO-App/blob/9f1aa1ba390791cfe1ed480437961157db9bce6c/readme/scenebkt.jpg)
 
 _Scene Forum_
+![sceneforum](https://github.com/AthifahNurRahmanMD/UINFO-App/blob/9f1aa1ba390791cfe1ed480437961157db9bce6c/readme/sceneforum.jpg)
 
 # Pengujian Aplikasi
+![pengujianaplikasi](https://github.com/AthifahNurRahmanMD/UINFO-App/blob/9f1aa1ba390791cfe1ed480437961157db9bce6c/readme/pengujianaplikasi.png)
