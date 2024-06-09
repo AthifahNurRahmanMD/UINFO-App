@@ -9,8 +9,8 @@ UINFO adalah sebuah aplikasi berbasis Java GUI yang dikembangkan menggunakan Gra
 # Tema yang dipilih : Books, Reference, and Education
 # Nama Pendamping : Kak Muhammad Ardiansyah Asrifah
 # Tim Juri : 
-1. Kak Rafiq
-2. Kak Fahmi
+1. Kak Abd. Rafiq Anwar
+2. Kak Laode Fahmi Hidayat
 
 # Executive Summary
 Kami memutuskan untuk membuat aplikasi mengenai informasi universitas yang ada di Indonesia. Setelah melihat data pendaftaran mahasiswa setiap tahun yang terus meningkat dan jumlah mahasiswa yang diterima di universitas-universitas di Indonesia pun mengalami peningkatan, maka kami sepakat untuk membuat aplikasi informasi universitas bernamakan UINFO. 
